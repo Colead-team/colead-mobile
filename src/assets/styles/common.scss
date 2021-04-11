@@ -1,0 +1,98 @@
+
+$font-size-regular: 14px;
+$font-size-small: 12px;
+$primary-color: #00398C;
+$secondary-color: #F26311;
+$white: #FFFFFF;
+$black: #1A1A1A;
+$yellow: #FFEA00;
+$border-color: rgba(182, 182, 182, 0.75);
+
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-family: 'Montserrat'!important;
+
+h1 {
+  font-size: 24px!important;
+  font-weight: $font-weight-bold!important;
+  margin: 0;
+  color: $primary-color;
+}
+
+h2 {
+  font-size: 18px!important;
+  font-weight: 600!important;
+  margin: 0;
+  color: $primary-color;
+}
+
+p {
+  font-size: $font-size-regular;
+  font-weight: $font-weight-semi-bold;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+}
+
+.btn-primary {
+  font-family: $font-family;
+  background-color: $primary-color;
+  border: 0;
+  border-radius: 6px;
+  color: $white;
+  padding: 7px 20px;
+  font-weight: $font-weight-semi-bold;
+  margin: 0 20px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-secondary {
+  background-color: $white;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+  border-color: $border-color;
+  width: 180px;
+  height: 30px;
+  font-weight: 500;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00398C; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00398C; 
+}
